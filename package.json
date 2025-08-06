@@ -1,0 +1,47 @@
+{
+  "private": true,
+  "scripts": {
+    "dev:all": "shadow-cljs watch viewer ai functions",
+    "dev:css:viewer": "tailwindcss -i ./src/css/viewer.css -o ./dist/viewer/final.css -w",
+    "release:viewer": "rm -Rf dist/viewer/js ; shadow-cljs release viewer",
+    "emulators": "firebase emulators:start",
+    "emulators:keep-state": "firebase emulators:start --import ./work-data --export-on-exit ./work-data"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "dependencies": {
+    "@genkit-ai/firebase": "^1.15.1",
+    "@genkit-ai/googleai": "^1.15.1",
+    "@genkit-ai/vertexai": "^1.15.5",
+    "@headlessui/react": "^2.2.3",
+    "@heroicons/react": "^2.2.0",
+    "@js-joda/core": "4.3.1",
+    "@js-joda/locale_en-us": "4.4.0",
+    "@js-joda/timezone": "2.10.0",
+    "@mdxeditor/editor": "^3.40.0",
+    "create-react-class": "^15.7.0",
+    "crypto-js": "^4.1.1",
+    "data-urls": "^5.0.0",
+    "express": "^5.1.0",
+    "fast-crc32c": "^2.0.0",
+    "firebase": "^11.10.0",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "genkit": "^1.14.1",
+    "genkitx-openai": "^0.23.0",
+    "highlight.js": "11.1.0",
+    "qrcode.react": "^3.1.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "tailwindcss": "^4.1.7"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.7",
+    "autoprefixer": "^10.4.14",
+    "cssnano": "^6.0.0",
+    "daisyui": "^5.0.42",
+    "firebase-tools": "^13.33.0",
+    "shadow-cljs": "^2.28.21"
+  }
+}

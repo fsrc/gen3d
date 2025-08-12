@@ -46,7 +46,7 @@
                    {:subject (z/string)})
      :outputSchema (z/string)}
 
-    (fn [game-data]
+    (fn [^js game-data]
       (let [subject (.-subject game-data)
             prompt
             (str
@@ -67,7 +67,7 @@
      :inputSchema (z/array (z/string))
      :outputSchema (z/string)}
 
-    (fn [input-data]
+    (fn [^js input-data]
       (let [chat (s/join "\n" input-data)
             prompt
             (str
@@ -134,8 +134,10 @@
             
         (js/console.log prompt)
         (->
-         (gk/generate ai #js {:model ;(gk/google-ai-model "gemini-2.5-flash")
-                              gk/openai-gpt4o-model
+         (gk/generate ai #js {:model 
+                              ; (gk/google-ai-model "gemini-2.5-flash")
+                              ; gk/openai-gpt4o-model
+                              "openai/gpt-5"
                               :prompt prompt})
          (p/then (fn [result]
                    (let 

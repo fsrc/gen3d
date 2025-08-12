@@ -72,10 +72,8 @@ node_modules/
 .dataconnect
 
 
-dist/admin/js/
-dist/admin/final.css
-dist/client/js/
-dist/client/final.css
+dist/functions/ai.js
+dist/functions/index.js
 
 .clj-kondo/
 .lsp/

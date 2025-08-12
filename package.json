@@ -11,6 +11,7 @@
     "node": "22"
   },
   "dependencies": {
+    "@genkit-ai/compat-oai": "^1.16.0",
     "@genkit-ai/firebase": "^1.15.1",
     "@genkit-ai/googleai": "^1.15.1",
     "@genkit-ai/vertexai": "^1.15.5",

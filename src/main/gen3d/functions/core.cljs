@@ -28,5 +28,13 @@
           ; :authPolicy (f/has-claim "email_verified")
           ; :enforceAppCheck true}
 
-         ai/generate-poem-flow)})
+         ai/generate-poem-flow)
+
+       :generate3DObject
+       (f/on-call-genkit 
+         {:secrets [gemeni-api-key]}
+          ; :authPolicy (f/has-claim "email_verified")
+          ; :enforceAppCheck true}
+
+         ai/generate-3d-object-flow)})
 

@@ -16,7 +16,7 @@ try {require('source-map-support').install();} catch (e) {console.warn('no "sour
 
 global.CLOSURE_NO_DEPS = true;
 
-global.CLOSURE_DEFINES = {"shadow.cljs.devtools.client.env.repl_pprint":false,"shadow.cljs.devtools.client.env.reload_strategy":"optimized","shadow.cljs.devtools.client.env.devtools_url":"","shadow.cljs.devtools.client.env.autoload":true,"shadow.cljs.devtools.client.env.proc_id":"cd116f12-05db-41b6-bb39-7a5fa59265b2","shadow.cljs.devtools.client.env.use_document_protocol":false,"goog.ENABLE_DEBUG_LOADER":false,"shadow.cljs.devtools.client.env.server_port":9630,"shadow.cljs.devtools.client.env.server_token":"278f0f5a-e1a8-46b3-97f8-04d5d7bc6f87","shadow.cljs.devtools.client.env.use_document_host":true,"shadow.cljs.devtools.client.env.module_format":"goog","goog.LOCALE":"en","shadow.cljs.devtools.client.env.build_id":"ai","shadow.cljs.devtools.client.env.ignore_warnings":false,"goog.DEBUG":true,"cljs.core._STAR_target_STAR_":"nodejs","shadow.cljs.devtools.client.env.log":true,"anr.fire.environment.EMULATOR":true,"shadow.cljs.devtools.client.env.ssl":false,"shadow.cljs.devtools.client.env.enabled":true,"shadow.cljs.devtools.client.env.server_host":"localhost","shadow.cljs.devtools.client.env.worker_client_id":3,"goog.TRANSPILE":"never"};
+global.CLOSURE_DEFINES = {"shadow.cljs.devtools.client.env.repl_pprint":false,"shadow.cljs.devtools.client.env.reload_strategy":"optimized","shadow.cljs.devtools.client.env.devtools_url":"","shadow.cljs.devtools.client.env.autoload":true,"shadow.cljs.devtools.client.env.proc_id":"b8cfa1e5-e8cf-492b-8e5d-7313ded55a3f","shadow.cljs.devtools.client.env.use_document_protocol":false,"goog.ENABLE_DEBUG_LOADER":false,"shadow.cljs.devtools.client.env.server_port":9630,"shadow.cljs.devtools.client.env.server_token":"8a080c48-0314-494c-9a48-bc3dfc6ccb56","shadow.cljs.devtools.client.env.use_document_host":true,"shadow.cljs.devtools.client.env.module_format":"goog","goog.LOCALE":"en","shadow.cljs.devtools.client.env.build_id":"ai","shadow.cljs.devtools.client.env.ignore_warnings":false,"goog.DEBUG":true,"cljs.core._STAR_target_STAR_":"nodejs","shadow.cljs.devtools.client.env.log":true,"anr.fire.environment.EMULATOR":true,"shadow.cljs.devtools.client.env.ssl":false,"shadow.cljs.devtools.client.env.enabled":true,"shadow.cljs.devtools.client.env.server_host":"localhost","shadow.cljs.devtools.client.env.worker_client_id":3,"goog.TRANSPILE":"never"};
 
 var goog = global.goog = {};
 
@@ -1464,7 +1464,7 @@ SHADOW_IMPORT("anr.fire.environment.js");
 SHADOW_IMPORT("shadow.js.shim.module$genkit.js");
 SHADOW_IMPORT("shadow.js.shim.module$$genkit_ai$vertexai.js");
 SHADOW_IMPORT("shadow.js.shim.module$$genkit_ai$googleai.js");
-SHADOW_IMPORT("shadow.js.shim.module$genkitx_openai.js");
+SHADOW_IMPORT("shadow.js.shim.module$$genkit_ai$compat_oai$openai.js");
 SHADOW_IMPORT("anr.fire.genkit.js");
 SHADOW_IMPORT("anr.fire.zod.js");
 SHADOW_IMPORT("shadow.js.shim.module$openai.js");
